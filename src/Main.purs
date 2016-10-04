@@ -22,8 +22,6 @@ main
   . Eff ( err :: EXCEPTION, ajax :: AJAX, console :: CONSOLE | e )
         (Canceler ( ajax :: AJAX, console :: CONSOLE | e ))
 main = launchAff $ forever $ do
-  later' 5000 (pure unit)
-
   -- The status of the lab
   doorStatus <- getDoorStatus
   let summary = doorStatusSummary <$> doorStatus
@@ -33,3 +31,5 @@ main = launchAff $ forever $ do
   numDevices <- getNumDevices
   let summary' = numDevicesSummary <$> numDevices
   logShow $ either id (\s -> maybe "" id s) $ summary'
+
+  later' pollInterval (pure unit)
