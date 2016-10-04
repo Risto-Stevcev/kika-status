@@ -1,0 +1,19 @@
+{
+  "name": "kika-status",
+  "version": "0.1.0",
+  "description": "Gets the status of Hacklab Kika",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Risto Stevcev",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "2.x",
+    "xhr2": "0.x"
+  },
+  "devDependencies": {}
+}

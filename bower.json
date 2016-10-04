@@ -1,0 +1,25 @@
+{
+  "name": "kika-status",
+  "version": "0.1.0",
+  "description": "Gets the status of Hacklab Kika",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-console": "^1.0.0",
+    "purescript-affjax": "^2.0.1",
+    "purescript-argonaut": "^1.0.0",
+    "purescript-tailrec": "^1.0.0",
+    "purescript-argonaut-codecs": "^1.1.0",
+    "purescript-profunctor-lenses": "^1.0.0",
+    "purescript-math": "^2.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^1.0.0",
+    "purescript-test-unit": "^9.1.0",
+    "purescript-quickcheck": "^1.0.0"
+  }
+}
